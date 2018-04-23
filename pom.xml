@@ -6,7 +6,7 @@
 
 	<groupId>sparkjava-hello-world</groupId>
 	<artifactId>sparkjava-hello-world</artifactId>
-	<version>3.0</version>
+	<version>4.0</version>
 	<packaging>war</packaging>
 
 	<dependencies>
@@ -56,7 +56,7 @@
     <artifactId>docker-maven-plugin</artifactId>
     <version>0.4.10</version>
     <configuration>
-        <imageName>35.187.255.50:5000/${project.artifactId}.${version}</imageName>
+        <imageName>127.0.0.1:5000/${project.artifactId}.${version}</imageName>
         <dockerDirectory>${project.basedir}</dockerDirectory>
 		<pushImage>true</pushImage> 
     </configuration>
